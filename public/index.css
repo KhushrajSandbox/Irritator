@@ -1,36 +1,36 @@
 body,
 html {
-    height: 100%;
+  height: 100%;
 }
 
 .pure-button {
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 #button-secondary {
-    margin-top: 10px;
-    background: rgb(66, 184, 221);
-    color: white;
+  margin-top: 10px;
+  background: rgb(66, 184, 221);
+  color: white;
 }
 
 #button-cancel {
-    margin-top: 10px;
-    background: #ca3c3c;
-    color: white;
+  margin-top: 10px;
+  background: #ca3c3c;
+  color: white;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font: 15px/24px "Lato", Arial, sans-serif;
-    background-image: url("assets/bg.png");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font: 15px/24px "Lato", Arial, sans-serif;
+  background-image: url("assets/bg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
