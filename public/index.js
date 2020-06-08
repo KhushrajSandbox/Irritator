@@ -4,10 +4,10 @@
 //     console.log("resetting");
 // });
 
-var a = document.getElementsByTagName("a");
-for (var i = 0; i < a.length; i++) {
+let a = document.getElementsByTagName("a")
+for (let i = 0; i < a.length; i++) {
   a[i].onclick = function() {
-    window.location = this.getAttribute("href");
-    return false;
-  };
+    window.location = this.getAttribute("href")
+    return false
+  }
 }

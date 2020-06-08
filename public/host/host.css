@@ -1,32 +1,34 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font: 15px/24px "Lato", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 15px/24px "Lato", Arial, sans-serif;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
-.a {
-  display: inline-block;
-  vertical-align: top;
+#wrapper {
+    height: 100%;
 }
 
-.div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
-  margin-top: 10px !important;
+    margin-top: 10px !important;
 }
 
-.input {
-  width: 250px;
+input {
+    width: 250px;
+}
+
+.swal-modal {
+    padding-bottom: 50px;
 }
