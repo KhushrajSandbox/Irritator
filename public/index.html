@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Irritator</title>
+	<head>
+		<meta charset="utf-8" />
+		<title>Irritator</title>
 
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
+		<meta
+			name="viewport"
+			content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
 
-    <!-- add to home screen for ios -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="manifest" href="/manifest.json" />
 
-    <!-- Link -->
-    <script src="/socket.io/socket.io.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+		<!-- add to home screen for ios -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <!-- Basic Styling -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.1/build/base-min.css"
-    />
-  </head>
+		<!-- Link -->
+		<script src="/socket.io/socket.io.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css" />
 
-  <body>
-    <div class="bg"></div>
+		<!-- Basic Styling -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/purecss@1.0.1/build/base-min.css"
+		/>
+	</head>
 
-    <a href="host/">
-      <button class="pure-button pure-button-primary">Create Group</button>
-    </a>
+	<body>
+		<div class="bg"></div>
 
-    <a href="join/">
-      <button class="pure-button pure-button-primary" id="button-secondary">
-        Join Group
-      </button>
-    </a>
-    <script src="index.js"></script>
-  </body>
+		<a href="host/">
+			<button class="pure-button pure-button-primary">
+				Create Group
+			</button>
+		</a>
+
+		<a href="join/">
+			<button
+				class="pure-button pure-button-primary"
+				id="button-secondary"
+			>
+				Join Group
+			</button>
+		</a>
+		<script src="index.js"></script>
+		<script>
+			if (!navigator.serviceWorker.controller) {
+				navigator.serviceWorker.register("/sw.js").then(function (reg) {
+					console.log(
+						"Service worker has been registered for scope: " +
+							reg.scope
+					)
+				})
+			}
+		</script>
+	</body>
 </html>

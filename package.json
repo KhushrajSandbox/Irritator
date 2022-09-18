@@ -1,9 +1,9 @@
 {
-  "dependencies": {
-    "express": "latest",
-    "socket.io": "latest"
-  },
-  "scripts": {
-    "start": "node app.js"
-  }
+	"dependencies": {
+		"express": "latest",
+		"socket.io": "latest"
+	},
+	"scripts": {
+		"start": "node app.js"
+	}
 }

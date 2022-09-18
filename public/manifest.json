@@ -1,8 +1,10 @@
 {
-  "name": "Irritator",
-  "short_name": "Irritator",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#fff",
-  "description": "App to irritate music haters"
+	"name": "Irritator",
+	"short_name": "Irritator",
+	"description": "App to irritate music haters",
+	"start_url": "/",
+	"display": "standalone",
+	"orientation": "any",
+	"lang": "English",
+	"scope": "/"
 }

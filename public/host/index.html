@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>Irritator: Create Group</title>
+	<head>
+		<meta charset="utf-8" />
+		<title>Irritator: Create Group</title>
 
-    <meta name="viewport"
-          content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="msapplication-tap-highlight" content="no"/>
+		<meta
+			name="viewport"
+			content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
 
-    <!-- add to home screen for ios -->
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!-- add to home screen for ios -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <!-- Link -->
-    <link rel="stylesheet" type="text/css" href="host.css"/>
+		<!-- Link -->
+		<link rel="stylesheet" type="text/css" href="host.css" />
 
-    <!-- Socket io -->
-    <script src="/socket.io/socket.io.js"></script>
+		<!-- Socket io -->
+		<script src="/socket.io/socket.io.js"></script>
 
-    <!-- Basic Styling -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css"/>
+		<!-- Basic Styling -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/purecss@1.0.1/build/base-min.css"
+		/>
 
-    <!-- Sweet Alert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</head>
+		<!-- Sweet Alert -->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-<body>
-<div class="wrapper" id="wrapper">
-    <div><h1 id="id">Getting Id...</h1><h1 id="clients">Number of Clients: 0</h1></div>
-    <div class="pure-form wrapper">
-        <input inputmode="url" placeholder="Youtube song URL" type="url" id="url"/>
-        <button class="pure-button pure-button-primary button" id="start">Start</button>
-    </div>
-</div>
-<div id="container"></div>
-<script src="host.js"></script>
-</body>
+		<link rel="manifest" href="/manifest.json" />
+	</head>
+
+	<body>
+		<div class="wrapper" id="wrapper">
+			<div>
+				<h1 id="id">Getting Id...</h1>
+				<h1 id="clients">Number of Clients: 0</h1>
+			</div>
+			<div class="pure-form wrapper">
+				<input
+					inputmode="url"
+					placeholder="Youtube song URL"
+					type="url"
+					id="url"
+				/>
+				<button
+					class="pure-button pure-button-primary button"
+					id="start"
+				>
+					Start
+				</button>
+			</div>
+		</div>
+		<div id="container"></div>
+		<script src="host.js"></script>
+	</body>
 </html>
